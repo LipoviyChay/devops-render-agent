@@ -1,0 +1,8 @@
+{
+  "name": "devops-render-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DevOps homework: application deployed by an AI agent",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=22" }
+}

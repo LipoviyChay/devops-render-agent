@@ -1,0 +1,5 @@
+node_modules/
+.env
+.env.*
+report_history.txt
+*.png
