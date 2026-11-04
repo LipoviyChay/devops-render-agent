@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#151820"><meta name="description" content="Nexus — ИИ-помощник с реальными ответами Pollinations и контекстом диалога.">
+  <title>Nexus — AI Workspace</title><link rel="icon" href="data:,"><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a href="/" class="brand" aria-label="Nexus — главная"><span class="brand-icon">✳</span> nexus<span class="brand-dot">.</span></a>
+    <div class="workspace-label">ВАШЕ ПРОСТРАНСТВО</div>
+    <button class="new-chat" id="new-chat"><span>＋</span> Новый диалог <span class="new-arrow">↗</span></button>
+    <div class="nav-label">ИНСТРУМЕНТЫ</div>
+    <div class="nav-active"><span>◈</span> ИИ-помощник <span class="nav-count">01</span></div>
+    <div class="side-note"><span class="note-star">✧</span><h3>От вопроса — к идее</h3><p>Разбирайтесь в сложном, пишите код и находите новые решения вместе с ИИ.</p></div>
+    <div class="sidebar-bottom"><span class="avatar">Д</span><div><b>DevOps Workspace</b><small>Учебный проект · v2.0</small></div><span class="more">•••</span></div>
+  </aside>
+  <main>
+    <header><div class="breadcrumb">Workspace <span>/</span> <b>ИИ-помощник</b></div><div class="online"><i></i> Pollinations <span>FREE</span></div></header>
+    <section class="chat-scroll" id="chat-scroll">
+      <div class="welcome" id="welcome">
+        <div class="eyebrow"><span>✦</span> МЕСТО ДЛЯ ВАШИХ ИДЕЙ</div>
+        <h1>Большие идеи начинаются<br>с <em>простого вопроса.</em></h1>
+        <p class="intro">Ваш ИИ-помощник для кода, сложных вопросов<br class="desktop-break"> и всего, что хочется понять чуть лучше.</p>
+        <div class="suggestions">
+          <button data-prompt="Объясни простыми словами, что такое Docker и чем контейнер отличается от виртуальной машины."><span class="card-icon purple">⌘</span><b>Разобраться в DevOps</b><small>Docker, серверы и облака</small><span class="card-arrow">↗</span></button>
+          <button data-prompt="Покажи простой пример HTTP-сервера на Node.js и кратко объясни код."><span class="card-icon coral">&lt;/&gt;</span><b>Написать код</b><small>От идеи к рабочему примеру</small><span class="card-arrow">↗</span></button>
+          <button data-prompt="Составь краткий план изучения DevOps с нуля на 4 недели."><span class="card-icon green">☷</span><b>Составить план</b><small>Структура вместо хаоса</small><span class="card-arrow">↗</span></button>
+        </div>
+        <div class="welcome-caption"><span>↳</span> Выберите идею выше или начните со своей</div>
+      </div>
+      <div class="messages" id="messages" role="log" aria-live="polite" aria-relevant="additions text"></div>
+    </section>
+    <div class="compose-area">
+      <div class="error" id="error" role="alert" hidden></div>
+      <form id="chat-form" class="composer"><label for="prompt" class="sr-only">Ваше сообщение</label><textarea id="prompt" rows="1" maxlength="4000" placeholder="Спросите о чём угодно…" required></textarea><div class="composer-bottom"><div class="model"><span>✳</span> Pollinations <small>· контекст диалога</small></div><button id="send" type="submit"><span>Отправить</span><span class="send-arrow">↑</span></button></div></form>
+      <div class="compose-footer"><span id="status">Бесплатный API · пауза между запросами — 45 секунд</span><span class="enter-hint">Enter ↵ <span>отправить</span></span></div>
+      <p class="privacy">ИИ может ошибаться. Сообщения передаются Pollinations для генерации ответа. Не отправляйте секреты.</p>
+    </div>
+  </main>
+</body>
+</html>

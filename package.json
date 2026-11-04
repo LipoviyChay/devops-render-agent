@@ -1,8 +1,16 @@
 {
   "name": "devops-render-agent",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "DevOps homework: application deployed by an AI agent",
-  "scripts": { "start": "node server.js" },
-  "engines": { "node": ">=22" }
+  "description": "Nexus AI Workspace: real chat powered by Pollinations",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
 }
